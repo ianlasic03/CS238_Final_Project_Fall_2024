@@ -103,7 +103,7 @@ class BachMelodyQLearning:
         q_table[state][action] = q_val
 
 
-    def train(self, q_table, epochs=100, sequence_len=32):
+    def train(self, q_table, epochs=10000, sequence_len=32):
         for epoch in range(epochs):
             print(epoch)
             # initialize a random start point
